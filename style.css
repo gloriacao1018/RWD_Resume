@@ -1,0 +1,139 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: block;
+  margin: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "ANTON";
+  font-size: 71px;
+  margin: 0;
+}
+
+.contact {
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+}
+
+p, li{
+  font-size: 18px;
+}
+
+.contact a {
+  display: block;
+  padding: 3px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 900;
+  align-items: center;
+}
+
+.about{
+  font-size: larger;
+  font-weight: 500;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.contact::after,
+.experience::after,
+.skills::after,
+.education::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+a {
+  color: inherit; 
+}
+
+
+.button-container {
+    position: relative;
+    height: 5vh; 
+}
+
+.download-button {
+    display: flex;
+    padding: 10px 20px;
+    max-width: 200px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  
+  .download-button:hover {
+    background-color: #00b37a; 
+  }
+  
+
+/* Media query with a smallish min-width breakpoint */
+@media screen and (min-width: 320px) {
+  body {
+    background-color: #dd5b5b;
+    color: rgb(241, 237, 237);
+  }
+  .contact::after,
+  .experience::after,
+  .skills::after,
+  .education::after {
+    border-bottom: 0.5px solid white;
+  }
+  .download-button {
+    background-color: #ffffff; 
+    color: #dd5b5b; 
+  }
+}
+
+/* Media query with a slightly larger min-width breakpoint */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #ffb52b;
+    color: #00733a;
+  }
+  .contact::after,
+  .experience::after,
+  .skills::after,
+  .education::after {
+    border-bottom: 0.5px solid black;
+  }
+  .download-button {
+    background-color: #006d4e; 
+    color: #ffec20; 
+  }
+}
+
+/* Media query with a  larger still min-width breakpoint */
+@media screen and (min-width: 960px) {
+  body {
+    background-color: #375c143d;
+    color: #6f1133;
+  }
+  .contact::after,
+  .experience::after,
+  .skills::after,
+  .education::after {
+    border-bottom: 0.5px solid black;
+  }
+  .download-button {
+    background-color: #fffafa; 
+    color: #375C14; 
+  }
+}
+
+
