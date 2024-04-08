@@ -87,6 +87,7 @@ a {
   body {
     background-color: #dd5b5b;
     color: rgb(241, 237, 237);
+    line-height: 1.5;
   }
   .contact::after,
   .experience::after,
